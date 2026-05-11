@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>3D Scenarios</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Fondo decorativo -->
+
+    <div class="bg-grid"></div>
+
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cube"></i>
+            <span>3D Scenarios</span>
+        </div>
+
+        <div class="menu">
+            <a href="./scenarios/minecraft.html">Minecraft</a>
+            <a href="./scenarios/map.html">Map Controls</a>
+            <a href="./scenarios/orbit.html">Orbit</a>
+            <a href="./scenarios/pointerlock.html">Pointer Lock</a>
+            <a href="./scenarios/transform.html">Transform</a>
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Experiencias inmersivas desarrolladas con Three.js
+            </div>
+
+            <h1>
+                Explora el futuro de los
+                <span class="gradient-text">escenarios 3D</span>
+            </h1>
+
+            <p>
+                Navega por mundos interactivos, simulaciones en tiempo real y
+                experiencias inmersivas desarrolladas con WebGL y Three.js.
+                Un entorno moderno enfocado en gráficos 3D, controles avanzados
+                y exploración interactiva.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#scenarios" class="btn btn-primary">
+                    Explorar Escenarios
+                </a>
+
+                <a href="https://threejs.org/" target="_blank" class="btn btn-secondary">
+                    Three.js
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESCENARIOS -->
+
+    <section class="section" id="scenarios">
+
+        <div class="section-title">
+
+            <h2>Escenarios Disponibles</h2>
+
+            <p>
+                Cada escenario implementa diferentes sistemas de navegación,
+                físicas, cámaras y controles interactivos para explorar las
+                capacidades de Three.js.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <!-- Minecraft -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+
+                <h3>Minecraft World</h3>
+
+                <p>
+                    Mundo procedural voxel con físicas básicas, gravedad,
+                    terreno dinámico y movimiento first-person.
+                </p>
+
+                <a href="./scenarios/minecraft.html">
+                    Entrar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Map -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-map"></i>
+                </div>
+
+                <h3>Map Controls</h3>
+
+                <p>
+                    Navegación estilo mapa interactivo con zoom, paneo,
+                    damping y exploración aérea avanzada.
+                </p>
+
+                <a href="./scenarios/map.html">
+                    Entrar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Orbit -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <h3>Orbit Controls</h3>
+
+                <p>
+                    Sistema de cámara orbital para inspeccionar escenas 3D
+                    con navegación suave e interacción inmersiva.
+                </p>
+
+                <a href="./scenarios/orbit.html">
+                    Entrar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Pointer Lock -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-crosshairs"></i>
+                </div>
+
+                <h3>Pointer Lock FPS</h3>
+
+                <p>
+                    Escenario tipo videojuego FPS con movimiento WASD,
+                    gravedad, colisiones y control de cámara libre.
+                </p>
+
+                <a href="./scenarios/pointerlock.html">
+                    Entrar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Transform -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-up-down-left-right"></i>
+                </div>
+
+                <h3>Transform Controls</h3>
+
+                <p>
+                    Editor interactivo para mover, rotar y escalar objetos
+                    dentro de una escena 3D profesional.
+                </p>
+
+                <a href="./scenarios/transform.html">
+                    Entrar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-left">
+
+                <h3>3D Scenarios</h3>
+
+                <p>
+                    Plataforma experimental de escenarios interactivos
+                    desarrollada con Three.js y WebGL.
+                </p>
+
+            </div>
+
+            <div class="footer-right">
+
+                <a href="https://github.com/" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:correo@ejemplo.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Sebastian Martinez Alvarez — Interactive 3D Experiences
+        </div>
+
+    </footer>
+
+</body>
+</html>

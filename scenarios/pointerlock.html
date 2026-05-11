@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pointer Lock – 3D Scenarios</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+      }
+    }
+    </script>
+    <style>
+        body { margin: 0; overflow: hidden; }
+
+        #blocker {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 500;
+        }
+
+        #instructions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            color: white;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blocker DEBE estar en el HTML, no inyectado por JS -->
+    <div id="blocker">
+        <div id="instructions">
+            <p style="font-size:36px">Click para jugar</p>
+            <p>WASD — moverse<br>Mouse — mirar<br>Espacio — saltar</p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { injectLayout } from '../assets/js/core/layout.js';
+        injectLayout('pointerlock');
+    </script>
+
+    <!-- pointerlock.js carga DESPUÉS, cuando blocker ya existe en el DOM -->
+    <script type="module" src="../assets/js/scenarios/pointerlock.js"></script>
+
+</body>
+</html>

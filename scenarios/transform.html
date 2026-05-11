@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform – 3D Scenarios</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+      }
+    }
+    </script>
+    <style>
+        body { margin: 0; overflow: hidden; }
+
+        #info {
+            position: fixed;
+            bottom: 50px;  /* encima del footer */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-family: monospace;
+            font-size: 13px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 8px 16px;
+            border-radius: 6px;
+            z-index: 500;  /* encima del canvas, debajo del navbar/footer */
+            pointer-events: none;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="info">
+        "W" translate | "E" rotate | "R" scale | "+/-" adjust size<br>
+        "Q" toggle world/local space | "Shift" snap to grid<br>
+        "X" toggle X | "Y" toggle Y | "Z" toggle Z | "Spacebar" toggle enabled<br>
+        "Esc" reset current transform<br>
+        "C" toggle camera | "V" random zoom
+    </div>
+
+    <script type="module">
+        import { injectLayout } from '../assets/js/core/layout.js';
+        injectLayout('transform');
+    </script>
+
+    <script type="module" src="../assets/js/scenarios/transform.js"></script>
+
+</body>
+</html>
